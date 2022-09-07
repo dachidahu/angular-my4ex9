@@ -1,0 +1,952 @@
+.layout {
+  overflow: hidden;
+  background: #fbfcff;
+  margin: 0 auto;
+  position: relative;
+}
+.layout.on {
+  padding-top: 84px;
+}
+.wrap1 {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.wrap {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #ffffff;
+  padding: 50px 0;
+}
+.footer .logo {
+  width: 156px;
+  margin: 0 auto;
+}
+.footer .logo a,
+.footer .logo img {
+  width: 100%;
+  display: block;
+}
+.footer .t {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4f4f4f;
+}
+.footer .nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer .nav ul li a {
+  padding: 12px 20px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #000000;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.footer .copyright:hover,
+.footer .nav ul li a:hover {
+  color: #e87a61;
+}
+.footer .copyright {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: #4f4f4f;
+  font-size: 14px;
+  font-weight: 300;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.header {
+  background: #ffffff;
+}
+.header .top {
+  background: #fceae6;
+  height: 60px;
+  text-align: center;
+}
+.header .top h2 {
+  line-height: 50px;
+  color: #e87a61;
+  font-size: 25px;
+  font-weight: 600;
+}
+.header .hd {
+  padding: 20px 0;
+  position: relative;
+  z-index: 111;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  background: #ffffff;
+}
+.header.on .hd {
+  box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 22%);
+  position: fixed;
+}
+.header.on .top {
+  opacity: 0;
+}
+.header .hd .logo {
+  float: left;
+  width: 156px;
+}
+.header .hd .logo a,
+.header .hd .logo img {
+  display: block;
+  width: 100%;
+}
+.header .hd .naver {
+  float: right;
+}
+.header .hd .naver li {
+  float: left;
+  position: relative;
+}
+.header .hd .naver li h3 {
+  position: relative;
+}
+.header .hd .naver li h3:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  z-index: 1;
+  height: 3px;
+  background: #e87a61;
+  content: '';
+  width: 0;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.header .hd .naver li.on h3:before,
+.header .hd .naver li:hover h3:before {
+  width: 100%;
+}
+.header .hd .naver li h3 a {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 12px 20px;
+  color: #000000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header .hd .naver li h3 i {
+  position: absolute;
+  width: 8px;
+  top: 19px;
+  right: 5px;
+  height: 5px;
+  display: block;
+  background: url(../images/fh13.png) no-repeat right center;
+  background-size: 8px auto;
+}
+
+.header .hd .naver li .fnali {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 150%;
+  display: none;
+}
+.header .hd .naver li .fnali .fnli {
+  padding: 10px 5px;
+}
+.header .hd .naver li .fnali dl {
+  box-shadow: 0 0 5px 0 rgba(80, 80, 80, 0.5);
+}
+.header .hd .naver li .fnali dl dd a {
+  padding: 10px 4px 10px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  background: #fff;
+  display: block;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.header .hd .naver li .fnali dl dd a:hover {
+  color: #ffffff;
+  background: #e87a61;
+}
+.header .hd .naver li.ho h3 a {
+  color: #e87a61;
+}
+.fmake {
+  padding: 40px 0 45px;
+}
+.ftitle {
+  text-align: center;
+}
+.ftitle h1 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.ftitle p {
+  margin-top: 20px;
+  color: #e87a61;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.fbai {
+  border: 1px solid #d5dee3;
+  box-shadow: 0 4px 4px #ccc;
+  -webkit-box-shadow: 0 4px 4px #ccc;
+  background: #ffffff;
+}
+.fpadd {
+  padding: 10px;
+}
+.fcomplts {
+  float: left;
+  width: 65%;
+}
+.fcomplts .pad {
+  padding: 7px;
+}
+.ftlt {
+  text-align: center;
+  padding: 28px 30px 20px;
+}
+.ftlt h2 {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 1.1;
+}
+.ftlt h6 {
+  margin-top: 16px;
+  font-size: 19px;
+  line-height: 1.1;
+  color: #373e4a;
+}
+.fcomplts .padd {
+  padding: 0 40px 20px;
+}
+.ftit {
+  padding: 15px 0 0;
+}
+.fcomments,
+.faddress,
+.fhowoften,
+.faddextras,
+.fchoose {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+.ftit h3 {
+  font-size: 21px;
+  line-height: 30px;
+  color: #3a3c41;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.fchoose .chose {
+  padding: 15px 0 25px;
+}
+.fchoose .chose .lsele {
+  /* margin-bottom: 15px;
+	border: 1px solid #cccccc;
+	display: none;
+	padding: 0 10px;
+	font-size: 14px;
+	height: 40px;
+	width: 100%;
+	color: #333333;
+	background: url(../images/fg2.png) no-repeat right 10px center;
+	background-size: 20px auto ;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box; */
+}
+.ftellusab .ftellist {
+  display: none;
+}
+.ftellusab .ftellist:first-child {
+  display: block;
+}
+.ftellusab .ftellus .list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.ftellusab .ftellus .list li {
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 15px;
+}
+.ftellusab .ftellus .list li .lsele {
+  border: 1px solid #cccccc;
+  display: none;
+  padding: 0 10px;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  color: #333333;
+  background: url(../images/fg2.png) no-repeat right 10px center;
+  background-size: 20px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.faddextras .list ul {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.faddextras .list ul li {
+  margin-bottom: 30px;
+  width: calc((100% - 92px) / 4);
+  margin-right: 30px;
+}
+.faddextras .list ul li:nth-child(4n) {
+  margin-right: 0;
+}
+.faddextras .list ul li a {
+  display: block;
+}
+.faddextras .list ul li .icon {
+  border: 1px solid #cccccc;
+  height: 75px;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.faddextras .list ul li.on .icon {
+  border-color: #e87a61;
+  background: #e87a61;
+}
+.faddextras .list ul li:hover .icon {
+  border-color: #e87a61;
+}
+.faddextras .list ul li .icon img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-height: 60%;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); /* IE 9 */
+  -moz-transform: translateY(-50%); /* Firefox */
+  -webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+  -o-transform: translateY(-50%);
+}
+.faddextras .list ul li h5 {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #797979;
+  margin-top: 10px;
+}
+.ftit p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #797979;
+  font-weight: 100;
+  margin-top: 5px;
+}
+.ftit p i {
+  display: inline-block;
+  font-weight: bold;
+}
+.fwhenwould .ftime ul {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fwhenwould .ftime ul li {
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 20px;
+}
+.fwhenwould .ftime ul li .time {
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+}
+.fwhenwould .ftime ul li .lsele {
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+  background: url(../images/fh13.png) no-repeat right 12px center;
+  background-size: 10px auto;
+}
+.fwhenwould .ftime ul li .layui-form-select {
+  display: none;
+}
+.fhowoften .list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.fhowoften .list ul li {
+  width: calc((100% - 38px) / 4);
+  margin-bottom: 14px;
+}
+.fhowoften .list ul li a {
+  border: 1px solid #cccccc;
+  line-height: 48px;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  font-weight: 100;
+  border-radius: 4px;
+  display: block;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.fhowoften .list ul li:hover a,
+.fhowoften .list ul li.on a {
+  color: #fff;
+  background: #e87a61;
+  border-color: #e87a61;
+}
+
+.fwhoyouare .list ul {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fwhoyouare .list ul li {
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 15px;
+}
+.fwhoyouare .list ul li .info {
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+}
+.faddress .list {
+  margin: 20px auto;
+}
+.faddress .list .lt {
+  float: left;
+  width: calc(100% - 180px);
+}
+.faddress .list .lt .adder .info {
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+}
+.faddress .list .lt .fcity {
+  margin-top: 15px;
+}
+.faddress .list .lt .fcity .info {
+  float: left;
+  width: calc(100% - 180px);
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 40px;
+}
+.faddress .list .lt .fcity .fsele {
+  float: right;
+  width: 150px;
+}
+.faddress .list .lt .fcity .lsele {
+  display: none;
+  width: 100%;
+  font-size: 16px;
+  height: 40px;
+  color: #333333;
+  background: url(../images/fg2.png) no-repeat right 10px center;
+  padding: 0 10px;
+  background-size: 20px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.faddress .list .rt {
+  float: right;
+  width: 150px;
+}
+.faddress .list .rt .info {
+  width: 100%;
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 40px;
+}
+.faddress .list .rt .info:first-child {
+  margin-bottom: 15px;
+}
+.fdiscount .cen {
+  margin: 20px auto;
+}
+.fdiscount .cen ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fdiscount .cen ul li {
+  width: calc((100% - 30px) / 2);
+}
+.fdiscount .cen ul li .info {
+  width: 100%;
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 40px;
+}
+.fdiscount .cen ul li .apply {
+  display: block;
+  width: 100%;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e87a61;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.fcomments textarea {
+  margin: 20px auto;
+  width: 100%;
+  border: 1px solid #c6c6c7;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #3a3c41;
+  padding: 8px 12px;
+  font-size: 16px;
+  height: 90px;
+  resize: none;
+}
+.fselect .select {
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.fselect .select .lt {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fselect .select .lt .ico {
+  height: 38px;
+  width: 40px;
+  position: relative;
+}
+.fselect .select .lt .ico img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+  margin: 0 auto;
+  max-height: 50%;
+  display: none;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); /* IE 9 */
+  -moz-transform: translateY(-50%); /* Firefox */
+  -webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+  -o-transform: translateY(-50%);
+}
+.fselect .select .lt .ico img:nth-child(1) {
+  display: block;
+}
+.fselect .select .lt .info {
+  width: calc(100% - 40px);
+  height: 38px;
+  display: block;
+  border: none;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 100;
+}
+.fselect .select .fyear {
+  width: 150px;
+}
+.fselect .select .fyear ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fselect .select .fyear ul li {
+  width: 30%;
+}
+.fselect .select .fyear ul li:nth-child(3) {
+  width: 40%;
+}
+.fselect .select .fyear ul li .number {
+  height: 38px;
+  width: 100%;
+  display: block;
+  border: none;
+  font-size: 14px;
+  color: #333333;
+}
+.fselect .img {
+  margin-top: 15px;
+}
+.fselect .img img {
+  display: block;
+}
+.fselect .del {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999;
+}
+.fbooknow .book {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999;
+}
+.fbooknow .book a {
+  display: inline-block;
+  text-decoration: underline !important;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.fbooknow .book a:hover {
+  color: #e87a61;
+}
+.fbooknow .fchelab label {
+  display: inline-block;
+  margin: 30px auto 20px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999;
+  cursor: pointer;
+}
+.fbooknow .books {
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  background: #e87a61;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s; /* IE 9 */
+  -moz-transition: all 0.3s; /* Firefox */
+  -webkit-transition: all 0.3s; /* Safari 和 Chrome */
+  -o-transition: all 0.3s;
+}
+.fdiscount .cen ul li .apply:hover,
+.fbooknow .books:hover {
+  background: #e66245;
+}
+.fcomprts {
+  width: 34%;
+  float: right;
+}
+.fcomprts .fcomlist {
+  padding: 85px 15px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fcomprts .fcomlist li {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.fcomprts .fcomlist li .icon {
+  height: 40px;
+  position: relative;
+}
+.fcomprts .fcomlist li .icon img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+  margin: 0 auto;
+  max-height: 70%;
+  max-width: 70%;
+  display: block;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); /* IE 9 */
+  -moz-transform: translateY(-50%); /* Firefox */
+  -webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+  -o-transform: translateY(-50%);
+}
+.fcomprts .fcomlist li .text h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px auto;
+}
+.fcomprts .fcomlist li .text p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #373e4a;
+  font-weight: 100;
+}
+.ftlte h3 {
+  font-weight: 700;
+  padding: 26px 10px 20px;
+  border-bottom: solid 1px #dedede;
+  text-align: center;
+  color: #e87a61;
+  font-size: 19px;
+  line-height: 1.1;
+}
+.fbooking {
+  margin-top: 30px;
+}
+.fbooking .fbedroom {
+  border-bottom: solid 1px #dedede;
+  padding: 25px 20px 15px 10px;
+}
+.fbooking .fbedroom .fbooki .ic {
+  float: left;
+  width: 30px;
+}
+.fbooking .fbedroom .fbooki .ic img {
+  display: block;
+  width: 100%;
+}
+.fbooking .fbedroom .fbooki .rt {
+  float: right;
+  width: calc(100% - 55px);
+}
+.fbooking .fbedroom .fbooki .hl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fbooking .fbedroom .fbooki .hl h6,
+.fbooking .fbedroom .fbooki .hl h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ababab;
+}
+.fbooking .fbedroom .fbooki .tl {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.fbooking .fbedroom .fbooki .tl h6,
+.fbooking .fbedroom .fbooki .tl h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ababab;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.fbooking .fbedroom .fbooki .tl h5::before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  z-index: 1;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #ababab;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  content: '';
+}
+.fbooking .one,
+.fbooking .time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+  align-items: center;
+}
+.fbooking .one .ic,
+.fbooking .time .ic {
+  width: 30px;
+}
+.fbooking .one .ic img,
+.fbooking .time .ic img {
+  display: block;
+  width: 100%;
+}
+.fbooking .one h4,
+.fbooking .time h4 {
+  width: calc(100% - 55px);
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ababab;
+}
+.fmoney {
+  padding: 6px 25px 20px;
+}
+.fmoney .tl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fmoney .tl h6,
+.fmoney .tl h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ababab;
+}
+.fmoney .total {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fmoney .total h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #777;
+  font-weight: bold;
+}
+.fmoney .total h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #e87a61;
+  font-weight: bold;
+}
+.fhave {
+  margin-top: 40px;
+  text-align: center;
+}
+.fhave h5 {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+}
+.fhave h5 a {
+  display: inline-block;
+  color: #e87a61;
+}
+.fcomplts.fbai {
+  box-shadow: 0 0 4px #ccc;
+  -webkit-box-shadow: 0 0 4px #ccc;
+}
+.faddress .list .lt .fcity .fsele .layui-form-select .layui-input {
+  height: 40px;
+}
+.fbooknow .layui-form-checkbox {
+  display: none;
+}
+.fbooknow .fchelab .che {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+.fcomplete {
+  padding-bottom: 90px;
+}
